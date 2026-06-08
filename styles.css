@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+
+    background-image: url("images/bathroom.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Georgia, serif;
+    color: white;
+}
+
+/* Cream luxury navbar */
+
+nav {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+
+    background: rgba(245, 238, 224, 0.92);
+
+    backdrop-filter: blur(8px);
+
+    z-index: 1000;
+}
+
+.logo {
+
+    color: #7d6851;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav ul {
+
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+
+    text-decoration: none;
+
+    color: #6d5b47;
+
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+
+    color: #b89b73;
+}
+
+.overlay {
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.25),
+        rgba(0,0,0,0.50)
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero {
+
+    text-align: center;
+
+    padding-top: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero h1 {
+
+    font-size: 5rem;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+
+    text-shadow: 0 4px 15px rgba(0,0,0,.4);
+}
+
+.hero p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 1.25rem;
+
+    line-height: 1.9;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+.signup {
+
+    text-align: center;
+
+    padding-bottom: 100px;
+}
+
+.signup h2 {
+
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
+.signup p {
+
+    margin-bottom: 25px;
+}
+
+form {
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+input[type="email"] {
+
+    width: 380px;
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+
+    background: rgba(255,255,255,.95);
+}
+
+button {
+
+    padding: 18px 35px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background: #f2e9d9;
+
+    color: #6b5b47;
+
+    font-weight: bold;
+
+    transition: .2s;
+}
+
+button:hover {
+
+    transform: translateY(-2px);
+
+    background: #e6d8be;
+}
+
+.footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: rgba(0,0,0,.25);
+
+    font-size: .9rem;
+}
